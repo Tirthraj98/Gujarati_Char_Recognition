@@ -42,14 +42,14 @@ def load_selected_model(selected_model):
     label_encoder_path = ""
     
     if selected_model == "Character Model":
-        model_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/char_model_v1.h5"
-        label_encoder_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/char_label_encoder_v1.joblib"
+        model_path = "char_model_v1.h5"
+        label_encoder_path = "char_label_encoder_v1.joblib"
     elif selected_model == "Consonant Model":
-        model_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/con_model_v1.h5"
-        label_encoder_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/con_label_encoder_v1.joblib"
+        model_path = "con_model_v1.h5"
+        label_encoder_path = "con_label_encoder_v1.joblib"
     elif selected_model == "Vowel Model":
-        model_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/vow_model_v1.h5"
-        label_encoder_path = "/home/salogosm/code/machine learning with python/OpenCV projects/Mam's ML project/final_project/models/colab_models/vow_label_encoder_v1.joblib"
+        model_path = "vow_model_v1.h5"
+        label_encoder_path = "vow_label_encoder_v1.joblib"
 
     model = load_model(model_path)
     label_dencoder = joblib.load(label_encoder_path)
